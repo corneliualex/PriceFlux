@@ -130,10 +130,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\MD5Hash.cs" />
     <Compile Include="Migrations\201801221121291_FirstMigration.cs" />
     <Compile Include="Migrations\201801221121291_FirstMigration.Designer.cs">
       <DependentUpon>201801221121291_FirstMigration.cs</DependentUpon>
@@ -142,9 +144,18 @@
     <Compile Include="Migrations\201801221123547_AddedMaincategory.Designer.cs">
       <DependentUpon>201801221123547_AddedMaincategory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201801231309024_Added_UserModel.cs" />
+    <Compile Include="Migrations\201801231309024_Added_UserModel.Designer.cs">
+      <DependentUpon>201801231309024_Added_UserModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801231411452_Update_UserModel.cs" />
+    <Compile Include="Migrations\201801231411452_Update_UserModel.Designer.cs">
+      <DependentUpon>201801231411452_Update_UserModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Maincategory.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -183,6 +194,9 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Account\UserForm.cshtml" />
+    <Content Include="Views\Account\Index.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -201,6 +215,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801221123547_AddedMaincategory.resx">
       <DependentUpon>201801221123547_AddedMaincategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801231309024_Added_UserModel.resx">
+      <DependentUpon>201801231309024_Added_UserModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801231411452_Update_UserModel.resx">
+      <DependentUpon>201801231411452_Update_UserModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

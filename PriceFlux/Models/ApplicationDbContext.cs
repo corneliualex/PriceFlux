@@ -22,6 +22,7 @@ namespace PriceFlux.Models
 
         // public virtual DbSet<MyEntity> MyEntities { get; set; }
         public DbSet<Maincategory> Maincategories { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 
     //public class MyEntity
